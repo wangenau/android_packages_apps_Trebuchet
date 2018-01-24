@@ -32,9 +32,6 @@
     <string name="search_panel_gel">Google Now</string>
     <string name="search_panel_custom_home">CM Home</string>
 
-    <!-- Themes button -->
-    <string name="themes_button_text">Themes</string>
-
     <string name="scrolling_page_outlines">Page outlines</string>
     <string name="scrolling_fade_adjacent">Fade side pages</string>
 

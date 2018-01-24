@@ -1338,26 +1338,6 @@ public class Launcher extends Activity
         public void onScrollProgressChanged(float progress);
     }
 
-    protected void startThemeSettings() {
-        Intent chooser = new Intent(Intent.ACTION_MAIN)
-                .addCategory(OverviewSettingsPanel.THEME_CHOOSER_CATEGORY)
-                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                .addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
-        try {
-            startActivity(chooser);
-        } catch (ActivityNotFoundException e) {
-            Intent settings = new Intent().setClassName(OverviewSettingsPanel.ANDROID_SETTINGS,
-                    OverviewSettingsPanel.THEME_SETTINGS);
-            startActivity(settings);
-        }
-
-        if (mWorkspace.isInOverviewMode()) {
-            mWorkspace.exitOverviewMode(false);
-        } else if (mAppsCustomizeContent.isInOverviewMode()) {
-            mAppsCustomizeContent.exitOverviewMode(false);
-        }
-    }
-
     public void onClickSortModeButton(View v) {
         final PopupMenu popupMenu = new PopupMenu(this, v);
         final Menu menu = popupMenu.getMenu();

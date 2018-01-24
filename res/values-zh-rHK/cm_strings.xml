@@ -20,7 +20,6 @@
   <string name="drawer_settings">抽屜設定</string>
   <string name="setting_state_on">開啟</string>
   <string name="setting_state_off">關閉</string>
-  <string name="themes_button_text">主題</string>
   <string name="scrolling_page_outlines">頁面輪廓</string>
   <string name="scrolling_fade_adjacent">邊頁淡出</string>
   <string name="scrolling_wallpaper">捲動牆紙</string>

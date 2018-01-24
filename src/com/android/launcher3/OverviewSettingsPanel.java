@@ -18,9 +18,6 @@ public class OverviewSettingsPanel {
     public static final String ANDROID_SETTINGS = "com.android.settings";
     public static final String ANDROID_PROTECTED_APPS =
             "com.android.settings.applications.ProtectedAppsActivity";
-    public static final String THEME_SETTINGS =
-            "com.android.settings.Settings$ThemeSettingsActivity";
-    public static final String THEME_CHOOSER_CATEGORY = "cyngn.intent.category.APP_THEMES";
     public static final int HOME_SETTINGS_POSITION = 0;
     public static final int DRAWER_SETTINGS_POSITION = 1;
     public static final int APP_SETTINGS_POSITION = 2;
@@ -125,17 +122,6 @@ public class OverviewSettingsPanel {
         });
         wallpaperButton.setOnTouchListener(mLauncher.getHapticFeedbackTouchListener());
 
-        View themesButton = mLauncher.findViewById(R.id.themes_button);
-        themesButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                if (!mLauncher.getWorkspace().isSwitchingState()) {
-                    mLauncher.startThemeSettings();
-                }
-            }
-        });
-        themesButton.setOnTouchListener(mLauncher.getHapticFeedbackTouchListener());
-
         View defaultScreenButton = mLauncher.findViewById(R.id.default_screen_button);
         defaultScreenButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -169,7 +155,6 @@ public class OverviewSettingsPanel {
         View widgetButton = mOverviewPanel.findViewById(R.id.widget_button);
         View wallpaperButton = mOverviewPanel
                 .findViewById(R.id.wallpaper_button);
-        View themesButton = mOverviewPanel.findViewById(R.id.themes_button);
         View defaultHomePanel = mOverviewPanel.findViewById(R.id.default_screen_button);
 
         boolean isAllAppsVisible = mLauncher.isAllAppsVisible();
