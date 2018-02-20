@@ -71,13 +71,6 @@
 
     <!-- Screen [2] -->
     <favorite
-        launcher:packageName="com.cyngn.gallerynext"
-        launcher:className="com.cyngn.gallerynext.app.GalleryActivity"
-        launcher:container="-100"
-        launcher:screen="2"
-        launcher:x="0"
-        launcher:y="4" />
-    <favorite
         launcher:packageName="com.android.gallery3d"
         launcher:className="com.android.gallery3d.app.Gallery"
         launcher:container="-100"

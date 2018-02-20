@@ -99,12 +99,6 @@
         launcher:spanX="4"
         launcher:spanY="2" />
     <favorite
-        launcher:packageName="com.cyngn.gallerynext"
-        launcher:className="com.cyngn.gallerynext.app.GalleryActivity"
-        launcher:screen="2"
-        launcher:x="0"
-        launcher:y="3" />
-    <favorite
         launcher:packageName="com.android.gallery3d"
         launcher:className="com.android.gallery3d.app.Gallery"
         launcher:screen="2"
@@ -145,13 +139,6 @@
         launcher:container="-101"
         launcher:screen="3"
         launcher:x="3"
-        launcher:y="0" />
-    <favorite
-        launcher:packageName="com.cyngn.cameranext"
-        launcher:className="com.android.camera.CameraLauncher"
-        launcher:container="-101"
-        launcher:screen="4"
-        launcher:x="4"
         launcher:y="0" />
     <favorite
         launcher:packageName="com.android.camera2"
