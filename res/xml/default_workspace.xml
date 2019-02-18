@@ -48,6 +48,13 @@
         launcher:x="3"
         launcher:y="0" />
     <favorite
+        launcher:packageName="org.mozilla.fennec_fdroid"
+        launcher:className="org.mozilla.gecko.BrowserApp"
+        launcher:container="-101"
+        launcher:screen="4"
+        launcher:x="4"
+        launcher:y="0" />
+    <favorite
         launcher:packageName="com.android.browser"
         launcher:className="com.android.browser.BrowserActivity"
         launcher:container="-101"
